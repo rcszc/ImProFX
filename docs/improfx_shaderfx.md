@@ -23,7 +23,7 @@ GLEW调用封装定义: src\imgui_profx_src\improfx_shader\
 配置文件使用.json文件, RapidJSON库加载, 通常此框架需要两个必要核心配置文件"window_config.json"和"shader_config.json", 前者为配置GLFW窗口和ImGui的初始化, 后者为配置加载OpenGL着色器(特效部分).
 
 首先是: "window_config.json"
-```json
+```cpp
 {
   "window_name": "ImProFX - V0.1",                      // GLFW窗口标题
   "window_size": [ 1536, 864 ],                         // GLFW窗口大小[ width,height ]
@@ -40,7 +40,7 @@ GLEW调用封装定义: src\imgui_profx_src\improfx_shader\
 ```
 
 然后是: "shader_config.json" (对应以上"shader_reg_file"配置项).
-```json
+```cpp
 {
   "core_shaderfx_config": [ // 着色器包(package)数组
     {
