@@ -22,6 +22,8 @@
 - vs2022_sln_package/imgui-profx-vs2022_demo.zip 带Demo的项目(如上图)
 - vs2022_sln_package/imgui-profx-vs2022_src.zip 纯净框架项目(无丝竹之乱耳 /滑稽)
 
+> 框架的逻辑编写在 "imgui_profx_logic\framework_sys.cpp" 中有 Init,Loop,Free 三个基本函数
+
 第三方依赖库:
 - OpenGL GLFW3
 - OpenGL GLEW
