@@ -5,7 +5,7 @@ RCSZ
 
 > 2023_11_02 version 1.0.0 ahpla
 
-##1.0.0A
+## 1.0.0A
 > 纯函数的ImGui控件普通扩展, 与动画无关
 
 namespace ImGuiPro
