@@ -1,5 +1,8 @@
 # ImProFX
+
 基于ImGui的OpenGL着色器视觉特效GUI框架
+
+**建议配置** **RTX3050** **I5-10400** **及以上**
 
 >- Version 1.0.0 2023_11_02 RCSZ.
 >- Version 1.1.0 2023_11_06 RCSZ.
