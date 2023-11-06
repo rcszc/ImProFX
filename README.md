@@ -11,9 +11,9 @@
 > - 此坑肯定咬牙填(不扔了) /滑稽
 
 <p align="center">
-  <img src="docs/improfx_logo.png" style="width:33%;"/>
-  <img src="docs/improfx_demo1.0.png" style="width:33%;"/>
-  <img src="docs/improfx_demo1.1.png" style="width:33%;"/>
+  <img src="docs/improfx_logo.png" style="width:32%;"/>
+  <img src="docs/improfx_demo1.0.png" style="width:32%;"/>
+  <img src="docs/improfx_demo1.1.png" style="width:32%;"/>
 </p>
 
 ### 以下核心部分文档
