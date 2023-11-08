@@ -28,24 +28,24 @@ namespace CoreModuleRender {
 		return configdoc;
 	}
 
-	// ¼ÓÔØ×ÅÉ«Æ÷ÅäÖÃ.
+	// åŠ è½½ç€è‰²å™¨é…ç½®.
 	size_t FrameworkRender::ShaderConfigLoad(rapidjson::Document config) {
 		size_t return_items = NULL;
 		uint32_t tmu_count_number = NULL;
 		
 		if (!config.HasParseError() && config.IsObject()) {
-			// ¼ÓÔØ×ÅÉ«Æ÷°ü.
+			// åŠ è½½ç€è‰²å™¨åŒ….
 			if (config.HasMember("core_shaderfx_config") && config["core_shaderfx_config"].IsArray()) {
 				for (const auto& configitem : config["core_shaderfx_config"].GetArray()) {
 
-					FxRenderItem ItemDataTemp = {}; // shader(°ü).
+					FxRenderItem ItemDataTemp = {}; // shader(åŒ…).
 					string KeyNameTemp = {};
 
 					if (configitem.HasMember("shaderfx_package") && configitem["shaderfx_package"].IsString())
 						KeyNameTemp = configitem["shaderfx_package"].GetString();
 					LogInfoPush(LOG_TRC, SYSTEM_MODULE_LABLE_render + "shader config item_name[key]: " + KeyNameTemp);
 
-					// ¼ÓÔØ×ÅÉ«Æ÷ vs, fs.
+					// åŠ è½½ç€è‰²å™¨ vs, fs.
 					FSloadShader load_shader;
 
 					if (configitem.HasMember("shader_file_vertex") && configitem["shader_file_vertex"].IsString())
@@ -57,7 +57,7 @@ namespace CoreModuleRender {
 					ItemDataTemp.ShaderProgramHandle = load_shader.link_shader_program();
 					load_shader.delete_shader();
 
-					// »ñÈ¡äÖÈ¾·Ö±æÂÊ.
+					// è·å–æ¸²æŸ“åˆ†è¾¨ç‡.
 					Vector2T<float> Resolution = Vector2T<float>(1, 1);
 					if (configitem.HasMember("render_max_resolution") && configitem["render_max_resolution"].IsArray()) {
 
@@ -70,7 +70,7 @@ namespace CoreModuleRender {
 					Resolution.vector_x = abs(Resolution.vector_x);
 					Resolution.vector_y = abs(Resolution.vector_y);
 
-					// ´´½¨ FBO ¸½×ÅÎÆÀí. ÀëÆÁäÖÈ¾ =FBO=> ÎÆÀí.
+					// åˆ›å»º FBO é™„ç€çº¹ç†. ç¦»å±æ¸²æŸ“ =FBO=> çº¹ç†.
 					FScreateTexture CreateTexture(FS_TEXTURE_RGBA, Resolution);
 					FSloadFrameBuffer CreateFBO;
 					CreateFBO.bind_framebuffer(CreateTexture.get_texture_handle());
@@ -80,7 +80,7 @@ namespace CoreModuleRender {
 
 					CreateTexture.unbind_texture();
 
-					// ×ÅÉ«Æ÷ MVP ¾ØÕó(ortho).
+					// ç€è‰²å™¨ MVP çŸ©é˜µ(ortho).
 					float matrixcube = 1.0f;
 					if (configitem.HasMember("matrix_ortho_cube") && configitem["matrix_ortho_cube"].IsFloat())
 						matrixcube = configitem["matrix_ortho_cube"].GetFloat();
@@ -90,12 +90,12 @@ namespace CoreModuleRender {
 					const float* glmmatptr = glm::value_ptr(matmvp_tmp); // get glm matrix ptr.
 					memcpy_s(ItemDataTemp.RenderMVPmatrix.matrix, 16 * sizeof(float), glmmatptr, 16 * sizeof(float));
 
-					// ×î´óäÖÈ¾Ö¡ÂÊ.
+					// æœ€å¤§æ¸²æŸ“å¸§ç‡.
 					int64_t rate_time = NULL;
 					if (configitem.HasMember("render_max_fps") && configitem["render_max_fps"].IsInt64())
 						rate_time = configitem["render_max_fps"].GetInt64();
 
-					// ¼ÆÊ±(µ¥Î»:Î¢Ãë): (now - RenderRateTimer) > RenderRateTime ? : render
+					// è®¡æ—¶(å•ä½:å¾®ç§’): (now - RenderRateTimer) > RenderRateTime ? : render
 					ItemDataTemp.RenderRateTime = 1000 / rate_time * 1000;
 
 					// load model_data VAO,VBO.
@@ -121,7 +121,7 @@ namespace CoreModuleRender {
 							if (cfgitem.HasMember("image_ufh_name") && cfgitem["image_ufh_name"].IsString())
 								TexTemp.uniform_name = cfgitem["image_ufh_name"].GetString();
 
-							TexTemp.tmu_count = tmu_count_number; // ÒòÎªÕâÀïÒªÊ¹ÓÃ"glActiveTexture"
+							TexTemp.tmu_count = tmu_count_number; // å› ä¸ºè¿™é‡Œè¦ä½¿ç”¨"glActiveTexture"
 							++tmu_count_number;
 							// sample unit number limit.
 							tmu_count_number = tmu_count_number >= MaxNumberTMU ? MaxNumberTMU - 1 : tmu_count_number;
@@ -143,7 +143,7 @@ namespace CoreModuleRender {
 			else
 				LogInfoPush(LOG_WARN, SYSTEM_MODULE_LABLE_render + "unable find core_shaderfx_config.");
 
-			// ¼ÓÔØÔ´ÌùÍ¼(²»¾­shader´¦Àí)
+			// åŠ è½½æºè´´å›¾(ä¸ç»shaderå¤„ç†)
 			if (config.HasMember("core_raw_texture_config") && config["core_raw_texture_config"].IsArray()) {
 				for (const auto& configitem : config["core_raw_texture_config"].GetArray()) {
 
@@ -171,7 +171,7 @@ namespace CoreModuleRender {
 		return return_items;
 	}
 
-	// ÏµÍ³¿ò¼Ü³õÊ¼»¯.
+	// ç³»ç»Ÿæ¡†æ¶åˆå§‹åŒ–.
 	bool FrameworkRender::ProfxInit() {
 		bool return_flag = false;
 
@@ -301,6 +301,13 @@ namespace CoreModuleRender {
 				delete it->second;
 		}
 		LogInfoPush(LOG_INFO, SYSTEM_MODULE_LABLE_render + "free resources animation_object.");
+
+		// free memory resources.
+		for (auto it = DataDynamicMem.begin(); it != DataDynamicMem.end(); ++it) {
+			if (it->second != nullptr)
+				delete it->second;
+		}
+		LogInfoPush(LOG_INFO, SYSMD_LB_RENDER + "free resources memory_object.");
 
 		ImGuiFree();
 		return_flag |= !GLFWwindowFree();
