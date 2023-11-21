@@ -19,7 +19,7 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
 ### 以下核心部分文档
 > 建议按照顺序
-- [框架使用文档]([docs/improfx_usgae.md](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_usage.md))
+- [A](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_usage.md)
 - [框架核心文档](docs/improfx_corefx.md)
 - [框架ImGui动画控件文档](docs/improfx_animation.md)
 - [框架ImGui扩展控件文档](docs/improfx_imguipro.md)
