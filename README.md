@@ -1,18 +1,15 @@
 # ImProFX
 
-基于ImGui的OpenGL着色器视觉特效GUI框架
+基于ImGui和OpenGL着色器来提高原版ImGui视觉效果的GUI框架.
 
-**建议配置** **RTX3050** **I5-10400** **及以上**
+__建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
->- Version 1.0.0 2023_11_02 RCSZ.
->- Version 1.1.0 2023_11_06 RCSZ.
+>- Version 1.0.0 Ahpla 2023_11_02 RCSZ.
+>- Version 1.1.0 Ahpla 2023_11_06 RCSZ.
+>- Version 2.0.0 Test  2023_11_21 RCSZ.
 
-- 公告: 1.x.x版本将不会再更新新功能.
-- 预告: 2023除夕晚跨年发布2.0.0 Ahpla版本(在这之前不确定会不会有2.0 Test), 视觉效果以及框架使用等将会有空前的提升(b站会更新视频)!
-
-项目全称 ImGui ProFX 使用OpenGL着色器的特效来加强ImGui界面的视觉效果, 以及向着桌面应用开发框架发展, 加入了部分插值动画, 只不过这可能只适用于设备较好的用户.
-
-> - 此坑肯定咬牙填(不扔了) /滑稽
+- 公告: 2.0.0 TEST版本为前瞻版本, 可能有很多Bug, Ahpla版本还在肝(还早 /滑稽)
+- 预告: 2023除夕晚跨年争取2.0.0 Ahpla版本上线.
 
 <p align="center">
   <img src="docs/images/improfx_demo1.0.png" style="width:32%;"/>
@@ -21,6 +18,7 @@
 </p>
 
 ### 以下核心部分文档
+> 建议按照顺序
 - [框架使用文档](docs/improfx_usgae.md)
 - [框架核心文档](docs/improfx_corefx.md)
 - [框架ImGui动画控件文档](docs/improfx_animation.md)
@@ -29,22 +27,24 @@
 - [框架线程池文档](docs/improfx_threadpool.md)
 
 ### VisualStudio2022项目
-开袋即食~
-- vs2022_sln_package/imgui-profx-vs2022_demo.zip 带Demo的项目(如上图)
-- vs2022_sln_package/imgui-profx-vs2022_src.zip 纯净框架项目(无丝竹之乱耳 /滑稽)
-
-> 框架的逻辑编写在 "imgui_profx_logic\framework_sys.cpp" 中有 Init,Loop,Free 三个基本函数
+开袋即食
+- imgui-profx-vs2022.zip
 
 第三方依赖库:
 - OpenGL GLFW3
 - OpenGL GLEW
 - ImGui
 - RapidJSON
+- stb_image
 
-2023-11-06 (2)
-| 总行数 | 版本 | 测试设备(GPU) | IDE |
+2023-11-21 (3)
+| Lines | Version | Device(GPU) | IDE |
 | :---: | :---: | :---: | :---: |
-| 2981 | v1.0.0 | RTX4060 Labtop | VisualStudio2022 |
-| 3347 | v1.1.0 | RTX4060 Labtop | VisualStudio2022 |
+| 2981 | v1.0.0a | RTX4060 Labtop | VisualStudio2022 |
+| 3347 | v1.1.0a | RTX4060 Labtop | VisualStudio2022 |
+| 4857 | v2.0.0t | RTX4060 Labtop | VisualStudio2022 |
 
+> 因为这学期因为闲暇时间非常多, 刚好以前一直在用ImGui, 结合OpenGL的Shader已经基于ImGui的扩展控件写一个桌面GUI框架相较于原版ImGui极大的提高了"舒适度", 奈何我没有艺术细胞写的Demo难看死了hhh, 目前是属于塞了很多东西进去, 但是每样都是一个大坑得慢慢填. 这个时代太内卷了(特别是这行)一起加油吧.
+
+---
 （我菜佬勿喷
