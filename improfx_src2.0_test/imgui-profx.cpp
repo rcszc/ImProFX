@@ -1,6 +1,6 @@
 ﻿/* 
 * ImGuiProFX - II, Version 2.0.0 TEST @RCSZ 2023 - 2024.
-* Libray: OpenGL GLFW, OpenGL GLEW, ImGui, RapidJSON.
+* Libray: OpenGL GLFW, OpenGL GLEW, ImGui, RapidJSON, stb_iamge.
 * Msvc C++17 Release x64, IDE: Visual Studio 2022.
 * --------------------------------------------------------
 * 基于ImGui和OpenGL着色器的GUI框架, 为提升原版ImGui的视角效果以及体验.
