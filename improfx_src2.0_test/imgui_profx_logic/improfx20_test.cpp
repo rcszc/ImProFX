@@ -7,17 +7,17 @@ using namespace ProFxFramework;
 
 string teststr = u8R"(
  ImGuiProFX - II, Version 2.0.0 TEST @RCSZ 2023 - 2024.
- Libray: OpenGL GLFW, OpenGL GLEW, ImGui, RapidJSON.
+ Libray: OpenGL GLFW, OpenGL GLEW, ImGui, RapidJSON, stb_image.
  Msvc C++17 Release x64, IDE: Visual Studio 2022.
 --------------------------------------------------------
- »ùÓÚImGuiºÍOpenGL×ÅÉ«Æ÷µÄGUI¿ò¼Ü, ÎªÌáÉıÔ­°æImGuiµÄÊÓ½ÇĞ§¹ûÒÔ¼°ÌåÑé.
- Îª¿ª·¢ÕßÌá¹©¸ü¶à¹¤¾ß, ±£ÁôImGuiµÄ¼´Ê±ĞÔºÍ¼ò½à.
- Ïà½ÏÓÚ1.x°æ±¾ĞÂÔöÁË: Òì²½ÈÎÎñ, Ïß³Ì³Ø, ·´Éä, ÄÚÁª×ÅÉ«Æ÷, À©Õ¹¿Ø¼ş.
- Ïà½ÏÓÚ1.x°æ±¾ÍêÉÆÁË: ÈÕÖ¾ÏµÍ³, ÄÚ´æ¶ÔÏó, ×ÅÉ«Æ÷×é¼ş.
+ åŸºäºImGuiå’ŒOpenGLç€è‰²å™¨çš„GUIæ¡†æ¶, ä¸ºæå‡åŸç‰ˆImGuiçš„è§†è§’æ•ˆæœä»¥åŠä½“éªŒ.
+ ä¸ºå¼€å‘è€…æä¾›æ›´å¤šå·¥å…·, ä¿ç•™ImGuiçš„å³æ—¶æ€§å’Œç®€æ´.
+ ç›¸è¾ƒäº1.xç‰ˆæœ¬æ–°å¢äº†: å¼‚æ­¥ä»»åŠ¡, çº¿ç¨‹æ± , åå°„, å†…è”ç€è‰²å™¨, æ‰©å±•æ§ä»¶.
+ ç›¸è¾ƒäº1.xç‰ˆæœ¬å®Œå–„äº†: æ—¥å¿—ç³»ç»Ÿ, å†…å­˜å¯¹è±¡, ç€è‰²å™¨ç»„ä»¶.
 
  GitHub(BSD3): https://github.com/rcszc/ImProFX
- ËùÓĞshaderÊµÀı¶¼À´×Ô: https://www.shadertoy.com/
- 2.0.0 TEST Ïà½ÏÓÚ Ahpla »¹ÊÇÈ·ÊµºÜ¶à¹¦ÄÜ, ÊôÓÚÇ°Õ°°æ±¾, ÕùÈ¡ÔÚ¹ıÄêÇ°¸ÎÍê.
+ æ‰€æœ‰shaderå®ä¾‹éƒ½æ¥è‡ª: https://www.shadertoy.com/
+ 2.0.0 TEST ç›¸è¾ƒäº Ahpla è¿˜æ˜¯ç¡®å®å¾ˆå¤šåŠŸèƒ½, å±äºå‰ç»ç‰ˆæœ¬, äº‰å–åœ¨è¿‡å¹´å‰è‚å®Œ.
  - 2023.11.21
 )";
 
@@ -62,7 +62,7 @@ bool TestUserClass::LogicEventLoop(FRMCORE_PACKAGE& FrmDat, FRMCORE_INFO& FrmInf
 	ImGui::SetNextWindowPos(ImVec2(0, 0));
 	ImGui::SetNextWindowSize(ImGui::GetIO().DisplaySize);
 
-	// ÎŞ±êÌâÀ¸, ¹Ì¶¨Î»ÖÃ, ¹Ì¶¨´óĞ¡, ÎŞ·¨ÕÛµş, Òş²Ø»¬Ìõ, ²»½ÓÊÜÊó±ê¹öÂÖÊÂ¼ş.
+	// æ— æ ‡é¢˜æ , å›ºå®šä½ç½®, å›ºå®šå¤§å°, æ— æ³•æŠ˜å , éšè—æ»‘æ¡, ä¸æ¥å—é¼ æ ‡æ»šè½®äº‹ä»¶.
 	ImGuiWindowFlags TmpFlags = ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse;
 	ImGui::Begin("2.0 TEST", nullptr, TmpFlags);
 	ImGuiPro::FullWindowBackground(FrmData.FindRenderItemFBO(FrmDat.DataShaderFx, "fx_sunsky_shader"), ImVec2(0.85f, 1.0f), 8.0f);
@@ -72,16 +72,16 @@ bool TestUserClass::LogicEventLoop(FRMCORE_PACKAGE& FrmDat, FRMCORE_INFO& FrmInf
 
 		ImGuiPro::SmoothYSlide(window_page_ypos);
 
-		// ±êÌâ¾ÓÖĞ.
+		// æ ‡é¢˜å±…ä¸­.
 		ImGui::SetCursorPosX(ImGuiPro::ItemCalcCentered(950.0f));
 		ImGuiPro::TextTitleP1("IMGUI PRO FX - II Framework Version 2.0.0 TEST @RCSZ", 950.0f, ImVec4(0.0f, 1.0f, 0.72f, 0.88f));
 
-		// Ö÷Ò³Ãæ¾ÓÖĞ.
+		// ä¸»é¡µé¢å±…ä¸­.
 		ImGui::SetCursorPosX(ImGuiPro::ItemCalcCentered(1440.0f));
 		ImGuiProRZ::TemplatePageLSA("TestLSA", ImVec2(1440.0f, 810.0f), ImProFX20page, demo_page_play, demo_page_xpos, false, 0.7f);
 
 		ImGui::SetCursorPosX(ImGuiPro::ItemCalcCentered(300.0f));
-		// Ò³Ãæ¹ö¶¯°´Å¥.
+		// é¡µé¢æ»šåŠ¨æŒ‰é’®.
 		demo_page_play.vector_x = ImGuiProAnim::CallAnimButton("Front", FrmDat.DataAnimation, "pbut_front");
 		ImGui::SameLine();
 		demo_page_play.vector_y = ImGuiProAnim::CallAnimButton("Back", FrmDat.DataAnimation, "pbut_back");
@@ -214,10 +214,10 @@ bool TestUserClass::LogicEventLoop(FRMCORE_PACKAGE& FrmDat, FRMCORE_INFO& FrmInf
 		ImGui::Text("");
 
 		ImGui::SetCursorPosX(ImGuiPro::ItemCalcCentered(384.0f));
-		ImGuiPro::TextTitleP2(u8"ImProFX - II ¾ßÌåÇë²Î¿¼ÎÄµµ.", 384.0f, ImVec4(0.0f, 1.0f, 1.0f, 1.0f));
+		ImGuiPro::TextTitleP2(u8"ImProFX - II å…·ä½“è¯·å‚è€ƒæ–‡æ¡£.", 384.0f, ImVec4(0.0f, 1.0f, 1.0f, 1.0f));
 
 		ImGui::BeginChild("NULL END", ImVec2(1550.0f, 900.0f));
-		// Õ¼Î»×Ó´°¿Ú.
+		// å ä½å­çª—å£.
 		ImGui::EndChild();
 		
 		ImGuiPro::EndEnterLine();
