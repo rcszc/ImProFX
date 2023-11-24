@@ -8,7 +8,8 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 >- Version 1.1.0 Ahpla 2023_11_06 RCSZ.
 >- Version 2.0.0 Test  2023_11_21 RCSZ.
 
-- 公告: 2.0.0 TEST版本为前瞻版本, 可能有很多Bug, Ahpla版本图形底层暂时保留OpenGL暂时还在慢慢学vk(Vulkan给了我一点底层的小小震撼 /滑稽)
+- 公告: 2.0.0 TEST版本为前瞻版本, 可能有很多Bug, Ahpla版本图形底层暂时保留OpenGL还在慢慢学VK. (Vulkan给了我一点底层的小小震撼 /滑稽)
+- 新增: 线程池, 反射, 内联着色器, 动态加载纹理, 异步任务(半残) 等. (具体参考文档)
 - 当前施工: 2D粒子系统
 > - 接口: INTERFACE_PROFX_PARTICLE
 > - 着色器: system_fxsh_particle.vert.frag, system_fxsh_bloom.vert.frag
