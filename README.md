@@ -8,7 +8,7 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 >- Version 1.1.0 Ahpla 2023_11_06 RCSZ.
 >- Version 2.0.0 Test  2023_11_21 RCSZ.
 
-- 公告: 2.0.0 TEST版本为前瞻版本, 可能有很多Bug, Ahpla版本图形底层可能换成 Vulkan (还早 /滑稽)
+- 公告: 2.0.0 TEST版本为前瞻版本, 可能有很多Bug, ahpla版本图形底层暂时保留opengl(被vulkan劝退了 /滑稽)
 - 预告: 2023除夕晚跨年争取2.0.0 Ahpla版本上线.
 
 <p align="center">
