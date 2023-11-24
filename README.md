@@ -44,9 +44,9 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 2023-11-21 (3)
 | Lines | Version | Device(GPU) | IDE |
 | :---: | :---: | :---: | :---: |
-| 2981 | v1.0.0a | RTX4060 Labtop | VisualStudio2022 |
-| 3347 | v1.1.0a | RTX4060 Labtop | VisualStudio2022 |
-| 4857 | v2.0.0t | RTX4060 Labtop | VisualStudio2022 |
+| 2981 | v1.0.0 ahpla | RTX4060 Labtop | VisualStudio2022 |
+| 3347 | v1.1.0 ahpla | RTX4060 Labtop | VisualStudio2022 |
+| 4857 | v2.0.0 test1 | RTX4060 Labtop | VisualStudio2022 |
 
 > 因为这学期因为闲暇时间非常多, 刚好以前一直在用ImGui, 结合OpenGL的Shader和一些自写的基于ImGui的扩展控件开发一个桌面GUI框架, 相较于原版ImGui极大的提高了"舒适度", 奈何我没有艺术细胞写的Demo难看死了hhh, 目前是属于塞了很多东西进去, 但是每样都是一个大坑得慢慢填; 要说有啥意义我只能说造轮子永不过时.
 
