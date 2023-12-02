@@ -4,9 +4,9 @@ RCSZ
 [返回使用文档](improfx_usage.md)
 - 所在目录: src\imgui_profx_src\improfx_core\
 
-> 2023_11_02 version 1.0.0 ahpla
-> 2023_11_05 version 1.1.0 ahpla
-> 2023_11_21 version 2.0.0 TEST
+>- 2023_11_02 version 1.0.0 alpha
+>- 2023_11_05 version 1.1.0 alpha
+>- 2023_11_21 version 2.0.0 TEST
 
 ## 2.0.0T
 > 纯函数基于ImGui的扩展控件, 与动画类无关(但是也有简易插值).
