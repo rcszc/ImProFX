@@ -4,16 +4,16 @@
 
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
+历史:
 >- Version 1.0.0 Alpha 2023_11_02 RCSZ.
 >- Version 1.1.0 Alpha 2023_11_06 RCSZ.
 >- Version 2.0.0 Test-1  2023_11_21 RCSZ.
 
-- 公告: 2.0.0 TEST版本为前瞻版本, 可能有很多Bug, Alpha版本图形底层暂时保留OpenGL还在慢慢学VK. (Vulkan给了我一点底层的小小震撼 /滑稽)
-- 新增: 线程池, 反射, 内联着色器, 动态加载纹理, 异步任务(半残) 等. (具体参考文档)
+__公告__: 2.0.0 TEST版本为前瞻版本, 可能有很多Bug, Alpha版本图形底层暂时保留OpenGL还在慢慢学VK. (Vulkan给了我一点底层的小小震撼 /滑稽)
+__新增__: 线程池, 反射, 内联着色器, 动态加载纹理, 异步任务(半残) 等. (具体参考文档)
 
-- 当前施工: 2D粒子系统
-> - 接口: INTERFACE_PROFX_PARTICLE
-> - 着色器: system_fxsh_particle.vert.frag, system_fxsh_bloom.vert.frag
+- 当前施工: 主体架构已完成, 最近将发布Test-2.
+> Test-2与Alpha版本最接近, 架构基本不会再有变动
 
 <p align="center">
   <img src="docs/images/improfx_demo1.0.png" style="width:32%;"/>
