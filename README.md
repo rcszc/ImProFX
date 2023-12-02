@@ -4,10 +4,10 @@
 
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
-历史:
+历史(具体见最后表格):
 >- Version 1.0.0 Alpha 2023_11_02 RCSZ.
 >- Version 1.1.0 Alpha 2023_11_06 RCSZ.
->- Version 2.0.0 Test-1  2023_11_21 RCSZ.
+>- Version 2.0.0 Test-1 2023_11_21 RCSZ.
 
 - __公告:__ 2.0.0 TEST版本为前瞻版本, 可能有很多Bug, Alpha版本图形底层暂时保留OpenGL还在慢慢学VK. (Vulkan给了我一点底层的小小震撼 /滑稽)
 - __新增:__ 线程池, 反射, 内联着色器, 动态加载纹理, 异步任务(半残) 等. (具体参考文档)
@@ -43,13 +43,15 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 - stb_image
 
 2023-11-21 (3)
-| Lines | Version | Device(GPU) | IDE |
-| :---: | :---: | :---: | :---: |
-| 2981 | v1.0.0 Alpha | RTX4060 Labtop | VisualStudio2022 |
-| 3347 | v1.1.0 Alpha | RTX4060 Labtop | VisualStudio2022 |
-| 4857 | v2.0.0 Test-1 | RTX4060 Labtop | VisualStudio2022 |
+| Version | Lines | Architecture | Graphical |
+| :---: | :---: | :---: | :---: | :---: |
+|v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 |
+|v1.1.0 Alpha | 3347 | IMPROFX-EA-OGL | OpenGL4.6 |
+|v2.0.0 Test-1 | 4857 | IMPROFX-ST-OGL | OpenGL4.6 |
 
-> 因为这学期因为闲暇时间非常多, 刚好以前一直在用ImGui, 结合OpenGL的Shader和一些自写的基于ImGui的扩展控件开发一个桌面GUI框架, 相较于原版ImGui极大的提高了"舒适度", 奈何我没有艺术细胞写的Demo难看死了hhh, 目前是属于塞了很多东西进去, 但是每样都是一个大坑得慢慢填; 要说有啥意义我只能说造轮子永不过时.
+> 开发测试设备: CPU: I7-13700HX GPU: RTX4060LabTop
+
+> 因为这学期因为闲暇时间非常多, 刚好以前一直在用ImGui, 结合OpenGL的Shader和一些自写的基于ImGui的扩展控件开发一个桌面GUI框架, 相较于原版ImGui极大的提高了"舒适度", 奈何我没有艺术细胞写的Demo难看死了hhh, 目前是属于塞了很多东西进去, 但是每样都是一个大坑得慢慢填 /滑稽; 编程在于多练习, 要说有啥意义我只能说造轮子永不过时.
 
 ---
 （我菜佬勿喷
