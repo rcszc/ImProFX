@@ -4,8 +4,8 @@ RCSZ
 [返回使用文档](improfx_usage.md)
 - 所在目录: src\imgui_profx_src\improfx_memory\
 
-> 2023_11_05 version 1.1.0 ahpla
-> 2023_11_21 version 2.0.0 TEST
+>- 2023_11_05 version 1.1.0 alpha
+>- 2023_11_21 version 2.0.0 TEST
 
 框架内动态内存分配&使用&释放.
 
