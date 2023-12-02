@@ -4,7 +4,7 @@ RCSZ
 [返回使用文档](improfx_usage.md)
 - 所在目录: src\imgui_profx_src\improfx_thread\
 
-> 2023_11_21 version 2.0.0 TEST
+>- 2023_11_21 version 2.0.0 TEST
 
 框架内简易线程池使用.
 
