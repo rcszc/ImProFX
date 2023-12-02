@@ -1,7 +1,7 @@
 # ImProFx - DyInfo
 RCSZ
 
-> 2023_11_21 version 2.0.0 TEST
+>- 2023_11_21 version 2.0.0 TEST
 
 框架动态信息.
 
