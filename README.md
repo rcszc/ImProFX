@@ -45,9 +45,9 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 2023-11-21 (3)
 | Version | Lines | Architecture | Graphical |
 | :---: | :---: | :---: | :---: | :---: |
-|v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 |
-|v1.1.0 Alpha | 3347 | IMPROFX-EA-OGL | OpenGL4.6 |
-|v2.0.0 Test-1 | 4857 | IMPROFX-ST-OGL | OpenGL4.6 |
+| v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 |
+| v1.1.0 Alpha | 3347 | IMPROFX-EA-OGL | OpenGL4.6 |
+| v2.0.0 Test-1 | 4857 | IMPROFX-ST-OGL | OpenGL4.6 |
 
 > 开发测试设备: CPU: I7-13700HX GPU: RTX4060LabTop
 
