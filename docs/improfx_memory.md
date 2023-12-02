@@ -3,7 +3,7 @@ RCSZ
 
 - 所在目录: src\imgui_profx_src\improfx_memory\
 
-> 2023_11_05 version 1.1.0 ahpla
+>- 2023_11_05 version 1.1.0 alpha
 
 框架内动态内存分配使用释放.
 
