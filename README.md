@@ -1,6 +1,6 @@
 # ImProFX
 
-基于ImGui和OpenGL着色器来提高原版ImGui视觉效果的GUI框架.
+基于ImGui和OpenGL着色器来提高原版ImGui视觉效果的 __轻量GUI框架__.
 
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
