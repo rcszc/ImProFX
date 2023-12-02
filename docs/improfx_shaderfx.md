@@ -3,8 +3,8 @@ RCSZ
 
 - 所在目录: src\imgui_profx_src\improfx_core\
 
-> 2023_11_02 version 1.0.0 ahpla
-> 2023_11_05 version 1.1.0 ahpla
+>- 2023_11_02 version 1.0.0 alpha
+>- 2023_11_05 version 1.1.0 alpha
 
 ShaderFX为框架核心部分.
 
