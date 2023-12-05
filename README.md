@@ -53,7 +53,7 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 | 2023.11.02 | v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 |
 | 2023.11.06 | v1.1.0 Alpha | 3347 | IMPROFX-EA-OGL | OpenGL4.6 |
 | 2023.11.21 | v2.0.0 Test-1 | 4857 | IMPROFX-ST-OGL | OpenGL4.6 |
-| 2023.12.05 | v2.0.0 Test-2 | 6055 | IMPROFX_ST-OGL | OpenGL4.6 |
+| 2023.12.05 | v2.0.0 Test-2 | 6057 | IMPROFX_ST-OGL | OpenGL4.6 |
 
 > 开发测试设备: __CPU:__ I7-13700HX, E5-2683v3(*2) __GPU:__ RTX4060LabTop
 
