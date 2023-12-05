@@ -58,11 +58,13 @@ namespace ImGuiProAnim {
 		if (active) {
 			// open state color & position.
 			vector_transcalc::TransVec4F(anim_color, ConfigHighColor, 0.048f, ConfigColorTransSpeed, smooth_scale);
+			vector_transcalc::TransVec2F(anim_size, ConfigHighSize, 0.042f, ConfigSizeTransSpeed, smooth_scale);
 			vector_transcalc::TransVec2F(anim_position, ConfigHighPosition, 0.05f, ConfigPositionTransSpeed, smooth_scale);
 		}
 		else {
 			// close state color & position.
 			vector_transcalc::TransVec4F(anim_color, ConfigLowColor, 0.128f, ConfigColorTransSpeed, smooth_scale);
+			vector_transcalc::TransVec2F(anim_size, ConfigLowSize, 0.042f, ConfigSizeTransSpeed, smooth_scale);
 			vector_transcalc::TransVec2F(anim_position, ConfigLowPosition, 0.128f, ConfigPositionTransSpeed, smooth_scale);
 		}
 	}
