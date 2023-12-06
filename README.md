@@ -1,6 +1,7 @@
 # ImProFX
 
 基于ImGui和OpenGL着色器来提高原版ImGui视觉效果的 __轻量GUI框架__.
+> 爱发电: https://afdian.net/a/rcszvs
 
 __当前版本:__ __V2.0.0TEST2__
 
