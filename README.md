@@ -3,7 +3,7 @@
 基于ImGui和OpenGL着色器来提高原版ImGui视觉效果的 __轻量GUI框架__.
 > 爱发电: https://afdian.net/a/rcszvs
 
-__当前版本:__ __V2.0.0TEST2__
+__当前版本:__ __V2.0.0ALPHA__
 
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
@@ -12,17 +12,19 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 >- Version 1.1.0 Alpha 2023_11_06 RCSZ.
 >- Version 2.0.0 Test-1 2023_11_21 RCSZ.
 >- Version 2.0.0 Test-2 2023_12_05 RCSZ.
+>- Version 2.0.0 Alpha 2023_12_08 RCSZ.
 
-- __公告:__ 2.0.0TEST2 版本架构已经定型相较于Alpha还有很多很多需要完善的, 以及Demo等. /在肝了
-- __新增:__ 线程池, 扩展模块, 完善了架构等. (具体参考文档)
-- __当前:__ 完善框架(可以看见还预留了一些接口没实现), 等Alpha版本吧.
-> 注意当前Test-2没有Demo
+- __公告:__ 2.0.0 ALPHA 版本属于一个跨越, 但是一个GUI框架还需要漫长的打磨, 当前还是属于早期版本, 敬请期待... /休息会儿
+- __新增:__ 节点动画(初期)
+- __当前:__ 准备2.0.0 EXT 版本以及未来架构的规划和改进
+> 具体参见Demo和文档
 
 <img src="docs/arch/ImProFx20-ARCH-Cyan.png"/>
 <p align="center">
   <img src="docs/images/improfx_demo1.0A.png" style="width:32%;"/>
   <img src="docs/images/improfx_demo1.1A.png" style="width:32%;"/>
   <img src="docs/images/improfx_demo2.0T1.png" style="width:32%;"/>
+   <img src="docs/images/improfx_demo2.0A.png" style="width:32%;"/>
 </p>
 
 ### 以下核心部分文档
@@ -48,13 +50,14 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 - RapidJSON
 - stb_image
 
-2023-12-05 (4)
+2023-12-08 (5)
 | Time | Version | Lines | Architecture | Graphical |
 | :---: | :---: | :---: | :---: | :---: |
 | 2023.11.02 | v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 |
 | 2023.11.06 | v1.1.0 Alpha | 3347 | IMPROFX-EA-OGL | OpenGL4.6 |
 | 2023.11.21 | v2.0.0 Test-1 | 4857 | IMPROFX-ST-OGL | OpenGL4.6 |
 | 2023.12.05 | v2.0.0 Test-2 | 6057 | IMPROFX-ST-OGL | OpenGL4.6 |
+| 2023.12.08 | v2.0.0 Alpha | 7002 | IMPROFX-ST-OGL | OpenGL4.6 |
 
 > 开发测试设备: __CPU:__ I7-13700HX, E5-2683v3(*2) __GPU:__ RTX4060LabTop
 
