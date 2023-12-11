@@ -19,7 +19,7 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 - __当前:__ 准备2.0.0 EXT 版本以及未来架构的规划和改进
 > 具体参见Demo和文档
 
-<img src="docs/arch/ImProFx20-ARCH-BG.png"/>
+<img src="docs/arch/ImProFX20-ARCH-BG.png"/>
 <p align="center">
   <img src="docs/images/improfx_demo1.0A.png" style="width:24%;"/>
   <img src="docs/images/improfx_demo1.1A.png" style="width:24%;"/>
