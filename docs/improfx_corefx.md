@@ -31,17 +31,19 @@ OpenGL4.6图形底层(着色器)调用封装定义: src\imgui_profx_src\improfx_
 "window_config.json"具体参见注释:
 ```cpp
 {
-  "window_name": "ImProFX - V2.0 TEST",                 // GLFW窗口标题
+  "window_name": "ImProFX - V2.0 ALPHA",                // GLFW窗口标题
   "window_size": [ 1680, 945 ],                         // GLFW窗口大小[ width,height ]
   "window_MSAA": 4,                                     // GLFW抗锯齿(MSAA)等级
   "window_fw_version": [ 3, 3 ],                        // GLFW版本配置 x.x
   "window_sh_version": "#version 330 core",             // ImGui配置着色器版本
-  "imgui_fonts_file": "imgui_profx_system/Dengb.ttf",   // ImGui加载字体(全局)
+  "window_icon_file": "imgui_profx_system/xxx.xxx",     // 窗口图标文件
+  "imgui_fonts_file": "imgui_profx_system/xxx.xxx",     // ImGui加载字体(全局)
   "imgui_fonts_size": 32.0,                             // ImGui配置字体大小(全局)
   "imgui_fonts_color": [ 0.0, 1.0, 0.85, 1.0 ],         // ImGui配置字体颜色(全局)
-  "imgui_window_rounding": 3.2,                         // ImGui窗口圆角程度
+  "imgui_window_rounding": 5.2,                         // ImGui窗口圆角程度
   "imgui_frame_rounding": 5.5,                          // ImGui帧控件圆角程度
-  "shader_reg_file": "imgui_profx_system/config/shader_config.json" // 着色器配置文件路径
+  "shader_reg_file": "imgui_profx_system/config/shader_config.json", // 着色器配置文件路径
+  "system_create_workers": 32                           // 框架线程池初始工作线程数量
 }
 ```
 
