@@ -11,13 +11,13 @@
 框架内简易线程池使用.
 
 ## 2.0.0A
-> namespace ImDynamicMem (用不到)
+> namespace ImThreadTask (用不到)
 
 线程池对象直接在框架内调用就可以, 无需创建销毁等.
 
 线程池对象:
 ```cpp
-class ImThreadTask::ThreadPool(32);
+class ImThreadTask::ThreadPool(number);
 ```
 
 调用线程池: 添加任务, 改变工作线程数量, 获取正在排队任务数量:
@@ -43,7 +43,7 @@ uint32_t number = FrmDat.TaskThreadPool.WorkingThreadsCount();
 try {
     ...
 }
-catch (ImThreadTask::error::ewp_error err) {
+catch (ImThreadTask::error::TPerror err) {
     err.what();
 }
 ```
