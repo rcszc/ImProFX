@@ -28,8 +28,8 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 <p align="center">
   <img src="docs/images/improfx_demo1.0A.png" style="width:24%;"/>
   <img src="docs/images/improfx_demo1.1A.png" style="width:24%;"/>
-  <img src="docs/images/improfx_demo2.0T1.png" style="width:24%;"/>
-   <img src="docs/images/improfx_demo2.0A.png" style="width:24%;"/>
+  <img src="docs/images/improfx_demo2.0A.png" style="width:24%;"/>
+  <img src="docs/images/improfx_demo2.1A.png" style="width:24%;"/>
 </p>
 
 ### 以下核心部分文档
