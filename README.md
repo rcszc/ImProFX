@@ -1,25 +1,30 @@
 # ImProFX
 
-基于ImGui和OpenGL着色器来提高原版ImGui视觉效果的 __轻量GUI框架__.
+基于ImGui和OpenGL着色器来优化原版ImGui视觉效果的 __桌面轻量GUI开发框架__.
 > 爱发电: https://afdian.net/a/rcszvs
 
-__当前版本:__ __V2.0.0ALPHA__
+__当前版本:__ __V2.1.0ALPHA__
 
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
-历史(具体见最后表格):
->- Version 1.0.0 Alpha 2023_11_02 RCSZ.
->- Version 1.1.0 Alpha 2023_11_06 RCSZ.
->- Version 2.0.0 Test-1 2023_11_21 RCSZ.
->- Version 2.0.0 Test-2 2023_12_05 RCSZ.
->- Version 2.0.0 Alpha 2023_12_08 RCSZ.
+历史 2023-12-16 (6):
+| Time | Version | Lines | Architecture | Graphical | Developers |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 2023.11.02 | v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 | RCSZ |
+| 2023.11.06 | v1.1.0 Alpha | 3347 | IMPROFX-EA-OGL | OpenGL4.6 | RCSZ |
+| 2023.11.21 | v2.0.0 Test-1 | 4857 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
+| 2023.12.05 | v2.0.0 Test-2 | 6057 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
+| 2023.12.08 | v2.0.0 Alpha | 7002 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
+| 2023.12.16 | v2.1.0 Alpha | 7767 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
 
-- __公告:__ 2.0.0 ALPHA 版本属于一个跨越, 但是一个GUI框架还需要漫长的打磨, 当前还是属于早期版本, 敬请期待... /休息会儿
-- __新增:__ 节点动画(初期)
-- __当前:__ 准备2.0.0 EXT 版本以及未来架构的规划和改进
+- __公告:__ 2.1.0 ALPHA  当前开发路线全部属于早期版本, 变动会比较大并且你在源码中可能看到文档上没有的东西, 那些是正在开发的部分 /滑稽
+- __新增:__ 修改了内存对象, 新增引入第三方控件扩展, 以及动画菜单扩展(非第三方)
+- __当前:__ 开发重心在ImGui扩展控件以及窗口美化, 很希望你能提出一些建议, __我也是在摸索中学习__
 > 具体参见Demo和文档
 
-<img src="docs/arch/ImProFX20-ARCH-S.png"/>
+---
+
+<img src="docs/arch/ImProFX20-ARCH.png"/>
 <p align="center">
   <img src="docs/images/improfx_demo1.0A.png" style="width:24%;"/>
   <img src="docs/images/improfx_demo1.1A.png" style="width:24%;"/>
@@ -38,30 +43,23 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 - [框架粒子系统文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_particle.md)
 - [框架内存对象文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_memory.md)
 - [框架线程池文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_threadpool.md)
+- [框架扩展模块文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_extension.md)
 
 ### VisualStudio2022项目
 开袋即食 /doge
 - imgui-profx-vs2022.zip
 
-第三方依赖库:
+第三方依赖:
 - OpenGL GLFW3
 - OpenGL GLEW
 - ImGui
 - RapidJSON
 - stb_image
-
-2023-12-08 (5)
-| Time | Version | Lines | Architecture | Graphical |
-| :---: | :---: | :---: | :---: | :---: |
-| 2023.11.02 | v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 |
-| 2023.11.06 | v1.1.0 Alpha | 3347 | IMPROFX-EA-OGL | OpenGL4.6 |
-| 2023.11.21 | v2.0.0 Test-1 | 4857 | IMPROFX-ST-OGL | OpenGL4.6 |
-| 2023.12.05 | v2.0.0 Test-2 | 6057 | IMPROFX-ST-OGL | OpenGL4.6 |
-| 2023.12.08 | v2.0.0 Alpha | 7002 | IMPROFX-ST-OGL | OpenGL4.6 |
+- 一些ImGui第三方控件(具体见第三方许可证)
 
 > 开发测试设备: __CPU:__ I7-13700HX, E5-2683v3(*2) __GPU:__ RTX4060LabTop
 
-> 因为这学期因为闲暇时间非常多, 刚好以前一直在用ImGui, 结合OpenGL的Shader和一些自写的基于ImGui的扩展控件开发一个桌面GUI框架, 相较于原版ImGui极大的提高了"舒适度", 奈何我没有艺术细胞写的Demo难看死了hhh, 目前是属于塞了很多东西进去, 但是每样都是一个大坑得慢慢填 /滑稽; 编程在于多练习, 要说有啥意义我只能说造轮子永不过时.
+> __PS:__ 趁着这几年在学校想开发个"像样"的东西, 刚好以前一直在用ImGui, 结合OpenGL的着色器以及很多工具模块做一个轻量级桌面GUI开发框架, 相较于原版ImGui极大的提高了"舒适度", ~~奈何我没有艺术细胞写的Demo难看死了~~, 目前是属于塞了很多东西进去, 但是每样都是一个巨坑得慢慢填(比如内存对象&反射等) /滑稽; 编程在于多练习, 要说有啥意义我只能说造轮子永不过时.
 
 ---
 （我菜佬勿喷
