@@ -27,6 +27,7 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
 ---
 
+__IMPROFX-ST-OGL(架构)__
 <img src="docs/arch/ImProFX20-ARCH.png"/>
 <p align="center">
   <img src="docs/images/improfx_demo1.0A.png" style="width:24%;"/>
