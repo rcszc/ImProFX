@@ -45,7 +45,7 @@ __IMPROFX-ST-OGL(架构)__
   <img src="docs/images/improfx_demo2.1A.png" style="width:24%;"/>
 </p>
 
-### 以下核心部分文档
+### 以下框架文档
 > 建议按照顺序阅读
 
 - [框架使用文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_usage.md)
