@@ -34,7 +34,7 @@ __说明:__ 小版本主要进行模块优化&修改, 大版本架构会有大�
 | 2023.12.16 | v2.1.0 Alpha | 7767 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
 
 ---
-> 2024年可以会有一些朋友加入开发, 争取release 1.0版本总体量控制在3万行以内.
+> 2024年可能会有一些朋友加入开发, 争取release 1.0版本总体量控制在3万行以内.
 
 __IMPROFX-ST-OGL(架构)__
 <img src="docs/arch/ImProFX20-ARCH.png"/>
