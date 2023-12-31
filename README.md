@@ -1,6 +1,7 @@
 # ImProFX
 
 基于ImGui和OpenGL着色器来优化原版ImGui视觉效果的 __桌面轻量GUI开发框架__.
+正式发行版预计: __2025 - 2026__
 
 > - 爱发电: https://afdian.net/a/rcszvs
 > - BiliBili: https://space.bilibili.com/475659860
