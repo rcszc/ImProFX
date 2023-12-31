@@ -15,17 +15,23 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
 ---
 
-__说明:__ 小版本主要进行模块优化&修改, 大版本架构会有大的更改或者推翻重写, 当前开发路线全部为早期版本~
+### 请注意当前"ImFX"是一个特殊的版本,由于刚进行渲染抽象层重构非常"乱"所以没有文档,如果需要文档请前往分支"v2.1a"
 
-- __公告:__ 2.1.0 ALPHA 因为是早期版本(可以交流学习但是使用就算了), 变动会比较大并且你在源码中可能看到文档上没有的东西, 那些是正在开发的部分 /滑稽, 希望你能友好的提出建议, __我也是在摸索中学习__
-- __新增:__ 修改了内存对象, 新增引入第三方控件扩展, 以及动画菜单扩展(非第三方)
-- __当前:__ 因为opengl耦合程度太高, 提前进行渲染抽象层开发...
+---
+
+__说明:__ 小版本主要进行模块优化&修改, 大版本架构会有大的更改或者推翻重写, __当前开发路线全部为早期实践版本__
+
+- __公告:__ 2.2.0 IMFX 更新, 抽象层需要进一步完善. 希望你能友好的提出建议, __我也是在摸索中学习__
+- __新增:__ 渲染抽象层 IMFX-GL
+- __当前:__ 完善渲染抽象层, 完善LLRES(底层资源管理模块, 接近抽象层).
 > 具体参见Demo和文档, 预计2.2.0 ALPHA在2024年1~2月更新.
+
+---
 
 - __下一次大更新:__ 3.0.0 ALPHA 渲染抽象层(ImFX-GL), GUI控件抽象层(ImFX-UI)
 > 预计: 2024年5月~9月 架构: IMPROFX-PM-IMFXGL 兼容图形底层: OpenGL Vulkan, 架构图会在这之前公布...
 
-历史 2023-12-16 (6):
+历史 2024-01-01 (7):
 | Time | Version | Lines | Architecture | Graphical | Developers |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 2023.11.02 | v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 | RCSZ |
@@ -34,12 +40,14 @@ __说明:__ 小版本主要进行模块优化&修改, 大版本架构会有大�
 | 2023.12.05 | v2.0.0 Test-2 | 6057 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
 | 2023.12.08 | v2.0.0 Alpha | 7002 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
 | 2023.12.16 | v2.1.0 Alpha | 7767 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
+| 2024.01.01 | v2.2.0 *ImFX | 9425 | IMPROFX-ST-IMFXGL | OpenGL4.6 | RCSZ | 
 
 ---
 > 今年可能会有一些朋友加入开发, 争取release 1.0版本总体量控制在3万行以内.
 
 __IMPROFX-ST-OGL(架构)__
-<img src="docs/arch/ImProFX20-ARCH.png"/>
+<img src="ImProFX-ARCH.png"/>
+
 <p align="center">
   <img src="docs/images/improfx_demo1.0A.png" style="width:24%;"/>
   <img src="docs/images/improfx_demo1.1A.png" style="width:24%;"/>
@@ -47,18 +55,8 @@ __IMPROFX-ST-OGL(架构)__
   <img src="docs/images/improfx_demo2.1A.png" style="width:24%;"/>
 </p>
 
-### 以下框架文档
-> 建议按照顺序阅读
-
-- [框架使用文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_usage.md)
-- [框架核心文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_corefx.md)
-- [框架动态信息文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_dyinfo.md)
-- [框架ImGui动画控件文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_animation.md)
-- [框架ImGui扩展控件文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_imguipro.md)
-- [框架粒子系统文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_particle.md)
-- [框架内存对象文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_memory.md)
-- [框架线程池文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_threadpool.md)
-- [框架扩展模块文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_extension.md)
+### ~~以下框架文档~~
+> 请前往老版本分支
 
 ### VisualStudio2022项目
 开袋即食 /doge
@@ -74,7 +72,7 @@ __IMPROFX-ST-OGL(架构)__
 
 > 开发测试设备: __CPU:__ I7-13700HX, E5-2683v3(*2) __GPU:__ RTX4060LabTop
 
-> __PS:__ Qt太冗余了拖100多万行源码, 趁着这几年在学校闲暇时间开发学习一个自用GUI框架, 构思整个框架体系大概几周吧, 然后1.0-2.0版本重写了一次架构(后面还会有很多次重写), 相较于原版ImGui极大的提高了"舒适度", 再加上原生支持3D图形库可以提供更高抽象的着色器调用, ~~奈何我没有艺术细胞写的Demo难看死了~~, 也看到了很多dalao的渲染引擎争取以后能做底层兼容; 目前是属于塞了很多东西进去, 但是每样都是一个巨坑得慢慢填(比如着色器资源管理&反射等) /滑稽; 编程在于多写, 要说有啥意义我只能说造轮子永不过时.
+> __PS:__ Qt太冗余了拖100多万行源码, 趁着这几年在学校闲暇时间开发学习一个自用GUI框架, 构思整个框架体系大概几周吧, 然后1.0-2.0版本重写了一次架构(后面还会有很多次重写), 相较于原版ImGui极大的提高了"舒适度", 再加上原生支持3D图形库可以提供更高抽象的着色器调用, ~~奈何我没有艺术细胞写的Demo难看死了~~, 也看到了很多dalao的渲染引擎争取以后能做底层兼容; 目前是属于塞了很多东西进去, 但是每样都是一个巨坑得慢慢填(比如着色器资源管理&反射等) /滑稽; 要说有啥意义我只能说造轮子永不过时.
 
 ---
 （我菜佬勿喷
