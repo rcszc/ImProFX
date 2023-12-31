@@ -4,7 +4,7 @@
 
 > - 爱发电: https://afdian.net/a/rcszvs
 > - BiliBili: https://space.bilibili.com/475659860
-> - QQ交流闲聊群: 862410678
+> - 图形学QQ交流闲聊群: 862410678
 
 __当前版本:__ __V2.1.0ALPHA__
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
