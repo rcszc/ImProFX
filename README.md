@@ -45,14 +45,11 @@ __说明:__ 小版本主要进行模块优化&修改, 大版本架构会有大�
 ---
 > 今年可能会有一些朋友加入开发, 争取release 1.0版本总体量控制在3万行以内.
 
-__IMPROFX-ST-OGL(架构)__
-<img src="ImProFX-ARCH.png"/>
+__IMPROFX-ST-IMFX(架构)__
+<img src="images/ImProFX-ARCH.png"/>
 
 <p align="center">
-  <img src="docs/images/improfx_demo1.0A.png" style="width:24%;"/>
-  <img src="docs/images/improfx_demo1.1A.png" style="width:24%;"/>
-  <img src="docs/images/improfx_demo2.0A.png" style="width:24%;"/>
-  <img src="docs/images/improfx_demo2.1A.png" style="width:24%;"/>
+  <img src="images/improfx_demo22.png" style="width:70%;"/>
 </p>
 
 ### ~~以下框架文档~~
