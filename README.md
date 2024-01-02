@@ -11,7 +11,7 @@ __当前开发路线全部为早期实践版(更新速度非常快)__
 __当前版本:__ __V2.1.0ALPHA__
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
-- __好用的无依赖(框架)控件:__ [ImProFXcontrol](https://github.com/rcszc/ImProFXcontrol)
+- __好用的无依赖(框架)ImGui控件:__ [ImProFXcontrol](https://github.com/rcszc/ImProFXcontrol)
 > 这些控件是和框架同步开发的, 但是无需依赖框架, 可以直接集成到自己的ImGui项目中 ~
 
 ---
