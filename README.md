@@ -47,7 +47,7 @@ __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)�
 > 今年可能会有一些朋友加入开发, 争取release 1.0版本总体量控制在3万行以内.
 
 __IMPROFX-ST-IMFX(架构)__
-<img src="images/ImProFX-ARCH.png"/>
+<img src="images/ImProFX23-ARCH.png"/>
 
 <p align="center">
   <img src="images/improfx_demo22.png" style="width:70%;"/>
