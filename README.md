@@ -34,7 +34,10 @@ __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)�
 
 ---
 
-__更新:__ 2024.01.01 __版本:__ v2.2.0 *ImFX __总行数:__ 9425 __框架架构:__ IMPROFX-ST-IMFXGL __图形底层:__ OpenGL4.6 __开发:__ RCSZ __更多:__ [框架历史](VERSION.md)
+| Time | Version | Lines | Architecture | Graphical | Developers |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 2024.01.01 | v2.2.0 *ImFX | 9425 | IMPROFX-ST-IMFXGL | OpenGL4.6 | RCSZ | 
+[框架历史](VERSION.md)
 
 __IMPROFX-ST-IMFX(架构)__
 <img src="images/ImProFX23-ARCH.png"/>
