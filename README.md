@@ -60,13 +60,13 @@ __IMPROFX-ST-IMFX(架构)__
 开袋即食 /doge
 - imgui-profx-vs2022.zip
 
-第三方依赖:
+__第三方依赖:__
 - OpenGL GLFW3
 - OpenGL GLEW
 - ImGui
 - RapidJSON
-- stb_image
-- 一些ImGui第三方控件(具体见第三方许可证)
+- STB_IMAGE
+- ImGui第三方控件 (具体见第三方许可证)
 
 > 开发测试设备: __CPU:__ I7-13700HX, E5-2683v3(*2) __GPU:__ RTX4060LabTop
 
