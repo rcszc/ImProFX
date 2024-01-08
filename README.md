@@ -50,7 +50,7 @@ __IMPROFX-ST-OGL(架构)__
 ### 以下框架文档
 > 建议按照顺序阅读
 
-- [框架使用文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_usage.md)
+- [框架使用文档](https://github.com/rcszc/ImProFX/blob/three/docs/improfx_usage.md)
 - [框架核心文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_corefx.md)
 - [框架动态信息文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_dyinfo.md)
 - [框架ImGui动画控件文档](https://github.com/rcszc/ImProFX/blob/main/docs/improfx_animation.md)
