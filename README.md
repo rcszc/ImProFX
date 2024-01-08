@@ -32,17 +32,6 @@ __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)�
 - __下一次大更新:__ 3.0.0 ALPHA 渲染抽象层(ImFX-GL), GUI控件封装
 > 预计: 2024年5月~9月 架构: IMPROFX-PM-IMFXGL 架构图会在这之前公布...
 
-历史 2024-01-01 (7):
-| Time | Version | Lines | Architecture | Graphical | Developers |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 2023.11.02 | v1.0.0 Alpha | 2981 | IMPROFX-EA-OGL | OpenGL4.6 | RCSZ |
-| 2023.11.06 | v1.1.0 Alpha | 3347 | IMPROFX-EA-OGL | OpenGL4.6 | RCSZ |
-| 2023.11.21 | v2.0.0 Test-1 | 4857 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
-| 2023.12.05 | v2.0.0 Test-2 | 6057 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
-| 2023.12.08 | v2.0.0 Alpha | 7002 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
-| 2023.12.16 | v2.1.0 Alpha | 7767 | IMPROFX-ST-OGL | OpenGL4.6 | RCSZ |
-| 2024.01.01 | v2.2.0 *ImFX | 9425 | IMPROFX-ST-IMFXGL | OpenGL4.6 | RCSZ | 
-
 ---
 > 今年可能会有一些朋友加入开发, 争取release 1.0版本总体量控制在3万行以内.
 
