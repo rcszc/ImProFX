@@ -37,6 +37,7 @@ __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)�
 | Time | Version | Lines | Architecture | Graphical | Developers |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 2024.01.01 | v2.2.0 *ImFX | 9425 | IMPROFX-ST-IMFXGL | OpenGL4.6 | RCSZ | 
+
 [框架历史](VERSION.md)
 
 __IMPROFX-ST-IMFX(架构)__
