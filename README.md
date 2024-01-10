@@ -8,7 +8,7 @@ __当前开发路线全部为早期实践版(更新速度非常快),__ __也希�
 > - BiliBili: https://space.bilibili.com/475659860
 > - 图形学QQ交流闲聊群: 862410678
 
-__当前版本:__ __V2.1.0ALPHA__
+__当前版本:__ __V2.2.0ALPHA__
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
 - __好用的无依赖(框架)ImGui控件:__ [ImProFXcontrol](https://github.com/rcszc/ImProFXcontrol)
@@ -16,19 +16,15 @@ __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
 ---
 
-### 请注意当前"ImFX"是一个特殊的版本,由于刚进行渲染抽象层重构非常"乱"所以没有文档
-
----
-
 __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)架构会有大的更改或者推翻重写.
 
-- __公告:__ 2.2.0 IMFX 更新, LLRES 所有资源访问加锁, 抽象层需要进一步完善.
+- __公告:__ 2.2.0 ALPHA 更新, 文档写好了(之前的改的), __当前停更2个月__
 - __新增:__ 渲染抽象层 IMFX-GL
-- __当前:__ 完善渲染抽象层, 完善LLRES (底层资源管理模块).
+- __当前:__ 完善各大模块, 优化着色器
 
 ---
 
-- __下一次大更新:__ 3.0.0 ALPHA 渲染抽象层(ImFX-GL), GUI控件封装
+- __下一次大更新:__ 3.0.0 ALPHA
 > - 预计: 2024年5月~9月 架构: IMPROFX-PM-IMFXGL 架构图会在这之前公布...
 > - 由于当前为早期开发路线所以历史版本不保留分支.
 
@@ -36,22 +32,25 @@ __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)�
 
 | Time | Version | Lines | Architecture | Graphical | Developers |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| 2024.01.01 | v2.2.0 *ImFX | 9425 | IMPROFX-ST-IMFXGL | OpenGL4.6 | RCSZ | 
+| 2024.01.10 | v2.2.0 ALPHA | 9745 | IMPROFX-ST-IMFXGL | OpenGL4.6 | RCSZ | 
 
 [框架历史](VERSION.md)
 
-__IMPROFX-ST-IMFX(架构)__
-<img src="images/ImProFX23-ARCH.png"/>
+__IMPROFX-ST-IMFXGL(架构)__
+<img src="docs/arch/ImProFX23t-ARCH.png"/>
 
 <p align="center">
-  <img src="images/improfx_demo22.png" style="width:70%;"/>
+  <img src="docs/images/improfx22a.png" style="width:92%;"/>
 </p>
 
-### ~~以下框架文档~~
+### 以下框架文档
+> 包含9篇主要使用文档, 暂时无开发文档
+
+[使用文档目录](docs/improfx_usage.md)
 
 ### VisualStudio2022项目
 开袋即食 /doge
-- imgui-profx-vs2022.zip
+- imgui-profx22a-vs2022.zip
 
 __第三方依赖:__
 - OpenGL GLFW3
