@@ -15,9 +15,6 @@
 __当前版本:__ __V3.0.0ALPHA__ (中断)
 __建议配置:__ __RTX3050__ __I5-10400__ __及以上__
 
-- __好用的无依赖(框架)ImGui控件:__ [ImProFXcontrol](https://github.com/rcszc/ImProFXcontrol)
-> 这些控件是和框架同步开发的, 但是无需依赖框架, 可以直接集成到自己的ImGui项目中~
-
 ---
 
 __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)架构会有大的更改或者推翻重写.
@@ -28,6 +25,13 @@ __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)�
 
 ---
 
+### 项目荒废为止的全部资料
+> 包含源码,vs2022工程,drawio架构图等
+
+[目录](project/)
+
+---
+
 | Time | Version | Lines | Architecture | Graphical | Developers |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 2024.03.12 | v3.0.0 ALPHA | 9967 | IMPROFX-ST-IMFXGL | OpenGL4.6 | RCSZ | 
@@ -35,16 +39,11 @@ __版本说明:__ 小版本(.x.x)主要进行模块优化&修改, 大版本(x.)�
 [框架历史](VERSION.md)
 
 __IMPROFX-ST-IMFXGL(架构)__
-<img src="docs/arch/ImProFX23t-ARCH.png"/>
+<img src="project/docs/arch/ImProFX23t-ARCH.png"/>
 
 <p align="center">
-  <img src="docs/images/improfx22a.png" style="width:92%;"/>
+  <img src="project/docs/images/improfx22a.png" style="width:92%;"/>
 </p>
-
-### 以下框架文档
-> 包含9篇主要使用文档, 暂时无开发文档
-
-[使用文档目录](docs/improfx_usage.md)
 
 ### VisualStudio2022项目
 无
